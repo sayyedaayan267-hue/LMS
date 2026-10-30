@@ -1,0 +1,300 @@
+{
+  "settings": {
+    "borrowingPeriodDays": 14,
+    "finePerDayInr": 5
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Computer Science & Software",
+      "code": "CS",
+      "description": "Core algorithms, programming, distributed systems"
+    },
+    {
+      "id": 2,
+      "name": "Artificial Intelligence & ML",
+      "code": "AI",
+      "description": "Machine learning, deep learning, NLP, computer vision"
+    },
+    {
+      "id": 3,
+      "name": "Database & Systems Architecture",
+      "code": "DB",
+      "description": "Relational DBs, distributed storage, SQL and transactions"
+    },
+    {
+      "id": 4,
+      "name": "Mathematics & Algorithms",
+      "code": "MATH",
+      "description": "Discrete mathematics, linear algebra, graph theory"
+    },
+    {
+      "id": 5,
+      "name": "Literature & Philosophy",
+      "code": "LIT",
+      "description": "Classics, academic essays, and rhetoric"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Dr. Arthur Pendelton",
+      "email": "admin@library.edu",
+      "passwordHash": "$2b$10$qCy5IcW.7ObG/vq2VeMbQehq2gF3rr5FS.Id8odBywj75Wc8jsvca",
+      "role": "ROLE_ADMIN",
+      "studentId": "FAC-LIBRARIAN-01",
+      "department": "Library Sciences",
+      "phone": "+91 98765 43210",
+      "createdAt": "2026-01-15T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@college.edu",
+      "passwordHash": "$2b$10$K3TJ5v9xnZqp44rKdvD4G.BLAWU4LtS/Lkw5uUKDqk5GmBnUnvz4q",
+      "role": "ROLE_STUDENT",
+      "studentId": "CS2024-042",
+      "department": "Computer Science",
+      "phone": "+91 98111 22334",
+      "createdAt": "2026-02-01T10:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Priya Patel",
+      "email": "priya.patel@college.edu",
+      "passwordHash": "$2b$10$K3TJ5v9xnZqp44rKdvD4G.BLAWU4LtS/Lkw5uUKDqk5GmBnUnvz4q",
+      "role": "ROLE_STUDENT",
+      "studentId": "IT2024-089",
+      "department": "Information Technology",
+      "phone": "+91 98222 33445",
+      "createdAt": "2026-02-05T11:15:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Alex Chen",
+      "email": "alex.chen@college.edu",
+      "passwordHash": "$2b$10$K3TJ5v9xnZqp44rKdvD4G.BLAWU4LtS/Lkw5uUKDqk5GmBnUnvz4q",
+      "role": "ROLE_STUDENT",
+      "studentId": "AI2024-015",
+      "department": "Artificial Intelligence",
+      "phone": "+91 98333 44556",
+      "createdAt": "2026-02-10T14:20:00Z"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "isbn": "978-0134685991",
+      "title": "Effective Java (3rd Edition)",
+      "author": "Joshua Bloch",
+      "publisher": "Addison-Wesley",
+      "categoryId": 1,
+      "publicationYear": 2018,
+      "numberOfCopies": 5,
+      "availableCopies": 3,
+      "shelfLocation": "Rack CS-101",
+      "description": "The definitive best-practice guide for Java design patterns, generics, enums, lambdas, streams, and concurrency.",
+      "coverStyle": {
+        "bgGradient": "from-amber-900 via-slate-900 to-indigo-950",
+        "accentColor": "#F59E0B",
+        "icon": "Coffee"
+      }
+    },
+    {
+      "id": 2,
+      "isbn": "978-0132350884",
+      "title": "Clean Code: Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "publisher": "Prentice Hall",
+      "categoryId": 1,
+      "publicationYear": 2008,
+      "numberOfCopies": 6,
+      "availableCopies": 4,
+      "shelfLocation": "Rack CS-102",
+      "description": "Foundational principles for writing readable, maintainable, and self-documenting code in enterprise teams.",
+      "coverStyle": {
+        "bgGradient": "from-blue-950 via-slate-900 to-cyan-950",
+        "accentColor": "#38BDF8",
+        "icon": "Code2"
+      }
+    },
+    {
+      "id": 3,
+      "isbn": "978-0262033848",
+      "title": "Introduction to Algorithms (CLRS 3rd Ed.)",
+      "author": "Thomas H. Cormen, Charles E. Leiserson",
+      "publisher": "MIT Press",
+      "categoryId": 4,
+      "publicationYear": 2009,
+      "numberOfCopies": 8,
+      "availableCopies": 6,
+      "shelfLocation": "Rack MATH-204",
+      "description": "The standard comprehensive algorithmic reference spanning asymptotic analysis, dynamic programming, graphs, and NP-completeness.",
+      "coverStyle": {
+        "bgGradient": "from-emerald-950 via-slate-900 to-teal-950",
+        "accentColor": "#34D399",
+        "icon": "Binary"
+      }
+    },
+    {
+      "id": 4,
+      "isbn": "978-1491950357",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "publisher": "O'Reilly Media",
+      "categoryId": 3,
+      "publicationYear": 2017,
+      "numberOfCopies": 4,
+      "availableCopies": 2,
+      "shelfLocation": "Rack DB-301",
+      "description": "Deep dive into distributed systems, consensus algorithms, replication, stream processing, and partition tolerance.",
+      "coverStyle": {
+        "bgGradient": "from-rose-950 via-slate-900 to-orange-950",
+        "accentColor": "#FB923C",
+        "icon": "Database"
+      }
+    },
+    {
+      "id": 5,
+      "isbn": "978-1617294945",
+      "title": "Spring Boot in Action",
+      "author": "Craig Walls",
+      "publisher": "Manning Publications",
+      "categoryId": 1,
+      "publicationYear": 2016,
+      "numberOfCopies": 5,
+      "availableCopies": 4,
+      "shelfLocation": "Rack CS-105",
+      "description": "Hands-on practical development guide for building production REST services, JPA persistence, and Spring Security microservices.",
+      "coverStyle": {
+        "bgGradient": "from-green-950 via-slate-900 to-emerald-950",
+        "accentColor": "#4ADE80",
+        "icon": "Cpu"
+      }
+    },
+    {
+      "id": 6,
+      "isbn": "978-0262035613",
+      "title": "Deep Learning (Adaptive Computation)",
+      "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+      "publisher": "MIT Press",
+      "categoryId": 2,
+      "publicationYear": 2016,
+      "numberOfCopies": 3,
+      "availableCopies": 1,
+      "shelfLocation": "Rack AI-401",
+      "description": "Mathematical and conceptual foundation of multi-layer perceptrons, convolutional nets, optimization algorithms, and autoencoders.",
+      "coverStyle": {
+        "bgGradient": "from-purple-950 via-slate-900 to-indigo-950",
+        "accentColor": "#A78BFA",
+        "icon": "Brain"
+      }
+    },
+    {
+      "id": 7,
+      "isbn": "978-0134494166",
+      "title": "Database System Concepts (7th Edition)",
+      "author": "Abraham Silberschatz, Henry F. Korth",
+      "publisher": "McGraw-Hill",
+      "categoryId": 3,
+      "publicationYear": 2019,
+      "numberOfCopies": 6,
+      "availableCopies": 5,
+      "shelfLocation": "Rack DB-303",
+      "description": "Relational model, SQL query optimization, B+ Tree indexing, transactions ACID guarantees, and recovery architectures.",
+      "coverStyle": {
+        "bgGradient": "from-amber-950 via-slate-900 to-yellow-950",
+        "accentColor": "#FBBF24",
+        "icon": "Layers"
+      }
+    },
+    {
+      "id": 8,
+      "isbn": "978-0140449136",
+      "title": "The Odyssey (Deluxe Translation)",
+      "author": "Homer (tr. Robert Fagles)",
+      "publisher": "Penguin Classics",
+      "categoryId": 5,
+      "publicationYear": 1996,
+      "numberOfCopies": 4,
+      "availableCopies": 4,
+      "shelfLocation": "Rack LIT-101",
+      "description": "Timeless epic poem detailing Odysseus ten-year journey home to Ithaca after the Trojan War.",
+      "coverStyle": {
+        "bgGradient": "from-slate-900 via-stone-900 to-amber-950",
+        "accentColor": "#D4AF37",
+        "icon": "BookOpen"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "userId": 2,
+      "issueDate": "2026-10-10",
+      "dueDate": "2026-10-24",
+      "returnDate": null,
+      "status": "OVERDUE",
+      "remarks": "Overdue by 6 days for Capstone project",
+      "createdAt": "2026-10-10T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "bookId": 4,
+      "userId": 2,
+      "issueDate": "2026-10-20",
+      "dueDate": "2026-11-03",
+      "returnDate": null,
+      "status": "ISSUED",
+      "remarks": "Distributed systems research reading",
+      "createdAt": "2026-10-20T11:30:00Z"
+    },
+    {
+      "id": 3,
+      "bookId": 2,
+      "userId": 3,
+      "issueDate": "2026-10-18",
+      "dueDate": "2026-11-01",
+      "returnDate": null,
+      "status": "ISSUED",
+      "remarks": "Refactoring practice for OOP lab",
+      "createdAt": "2026-10-18T14:15:00Z"
+    },
+    {
+      "id": 4,
+      "bookId": 6,
+      "userId": 4,
+      "issueDate": "2026-10-01",
+      "dueDate": "2026-10-15",
+      "returnDate": "2026-10-14",
+      "status": "RETURNED",
+      "remarks": "Returned in pristine condition",
+      "createdAt": "2026-10-01T09:40:00Z"
+    }
+  ],
+  "returns": [
+    {
+      "id": 1,
+      "issueId": 4,
+      "returnDate": "2026-10-14",
+      "delayedDays": 0,
+      "fineAmount": 0,
+      "processedBy": 1,
+      "createdAt": "2026-10-14T15:00:00Z"
+    }
+  ],
+  "fines": [
+    {
+      "id": 1,
+      "issueId": 1,
+      "userId": 2,
+      "amount": 30,
+      "status": "PENDING",
+      "delayedDays": 6,
+      "paidAt": null,
+      "transactionRef": null,
+      "createdAt": "2026-10-25T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Athenaeum - Library Management System (FSJ Project)",
+  "description": "Full-Stack Library Management System with Java Spring Boot backend architecture, MySQL relational schema, role-based admin & student dashboards, book circulation, and fine calculation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
